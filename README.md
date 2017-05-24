@@ -1,5 +1,5 @@
 # Flask-Trucks-API
-## **A basic API - Truck booking for parcel service
+## A basic API - Truck booking for parcel service
 
 
 ### SERVER USED
@@ -332,7 +332,12 @@
 * To activate the virtual environment use the command `venv\scripts\activate`.
 * Install all the requirements using command `pip install --requirement` , read the requirements.txt.
 * Create a database named `truck`.
-* Launch the server using `python app.py`
+* For creating the tables in the database use command `python`, followed by below given commands
+	* `from model import db`
+	* `db.create_all()`
+	* `db.session.commit()`
+	* Your tables will be created.
+* Launch the server using command `python app.py`.
 * We are good to go.
 
 			
